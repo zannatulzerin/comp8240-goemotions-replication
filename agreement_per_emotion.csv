@@ -1,0 +1,12 @@
+emotion (manual),n,LLM_agree,Classifier_agree
+annoyance,3,1.0,0.3333333333333333
+anger,2,1.0,0.0
+caring,2,0.5,0.0
+amusement,1,1.0,0.0
+confusion,1,0.0,0.0
+disappointment,1,1.0,0.0
+disapproval,1,1.0,0.0
+disgust,1,1.0,0.0
+frustration,1,0.0,0.0
+remorse,1,0.0,1.0
+sadness,1,1.0,1.0
