@@ -1,0 +1,6 @@
+Sentiment,pos,neg
+Extremely Negative,0.139,0.341
+Extremely Positive,0.419,0.055
+Negative,0.142,0.193
+Neutral,0.084,0.065
+Positive,0.272,0.104

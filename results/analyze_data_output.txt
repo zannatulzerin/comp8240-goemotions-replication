@@ -1,0 +1,100 @@
+/content/gr_sparse/goemotions/analyze_data.py:225: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  unique_labels = data.groupby("id").apply(CheckAgreement, 1,
+/content/gr_sparse/goemotions/analyze_data.py:228: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  agree_dict_2 = data.groupby("id").apply(CheckAgreement, 2,
+/content/gr_sparse/goemotions/analyze_data.py:231: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  agree_dict = data.groupby("id").apply(CheckAgreement, 3,
+/content/gr_sparse/goemotions/analyze_data.py:234: DeprecationWarning: DataFrameGroupBy.apply operated on the grouping columns. This behavior is deprecated, and in a future version of pandas the grouping columns will be excluded from the operation. Either pass `include_groups=False` to exclude the groupings or explicitly select the grouping columns after groupby to silence this warning.
+  agree_dict = data.groupby("id").apply(CheckAgreement, 1, all_emotions_neutral,
+I1105 05:35:45.619155 135798258471040 category.py:224] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+I1105 05:35:45.723077 135798258471040 category.py:224] Using categorical units to plot a list of strings that are all parsable as floats or dates. If these strings should be plotted as numbers, cast to the appropriate data type before plotting.
+/content/gr_sparse/goemotions/analyze_data.py:268: UserWarning: set_ticklabels() should only be used with a fixed number of ticks, i.e. after set_ticks() or using a FixedLocator.
+  ax.set_yticklabels(["%dk" % (int(int(label) / 1000)) for label in labels])
+Loading data...
+58011 Examples
+211225 Annotations
+28 emotion Categories
+82 unique raters
+0.016 marked unclear
+Distribution of number of labels per example:
+1     0.560703
+2     0.416165
+3     0.020297
+4     0.001920
+5     0.000510
+6     0.000255
+7     0.000096
+8     0.000029
+9     0.000014
+10    0.000005
+12    0.000005
+Name: count, dtype: float64
+0.00 with more than 3 labels
+Label distributions:
+neutral           26.61
+neutral           26.61
+approval           8.48
+admiration         8.24
+annoyance          6.55
+gratitude          5.59
+disapproval        5.50
+curiosity          4.66
+amusement          4.45
+realization        4.23
+optimism           4.19
+disappointment     4.08
+love               3.94
+anger              3.89
+joy                3.84
+confusion          3.54
+sadness            3.25
+caring             2.89
+excitement         2.71
+surprise           2.65
+disgust            2.55
+desire             1.84
+fear               1.54
+remorse            1.22
+embarrassment      1.19
+nervousness        0.87
+pride              0.63
+relief             0.62
+grief              0.32
+dtype: float64
+Plotting label correlations...
+Plotting hierarchical relations...
+Calculating agreements...
+54263 (92%) of the examples have 2+ raters agreeing on at least one emotion label
+17763 (30%) of the examples have 3+ raters agreeing on at least one emotion label
+Plotting number of labels...
+Proportion of agreement per label:
+neutral           0.252909
+neutral           0.252909
+admiration        0.079196
+approval          0.077834
+annoyance         0.058490
+gratitude         0.054635
+disapproval       0.049280
+curiosity         0.044121
+amusement         0.042663
+optimism          0.038520
+love              0.038226
+realization       0.037495
+joy               0.036066
+disappointment    0.036013
+anger             0.035907
+confusion         0.032457
+sadness           0.029584
+caring            0.026447
+excitement        0.025042
+surprise          0.024296
+disgust           0.022867
+desire            0.016866
+fear              0.013897
+remorse           0.011077
+embarrassment     0.010148
+nervousness       0.007459
+relief            0.005481
+pride             0.005428
+grief             0.002728
+dtype: float64

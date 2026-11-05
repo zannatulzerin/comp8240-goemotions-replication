@@ -1,0 +1,104 @@
+model: GPT-5
+date: 2026-11-05
+row_ids: [111, 113, 114, 115, 116, 117, 118, 119, 120, 122, 124, 125, 126, 129, 131, 132, 134, 137, 138, 139, 140, 144, 145, 147, 149]
+
+1. nervousness
+2. confusion
+3. anger
+4. sadness
+5. annoyance
+6. sadness
+7. annoyance
+8. disapproval
+9. anger
+10. annoyance
+11. sadness
+12. annoyance
+13. sadness
+14. anger
+15. annoyance
+16. annoyance
+17. sadness
+18. anger
+19. joy
+20. sadness
+21. disappointment
+22. nervousness
+23. annoyance
+24. embarrassment
+25. confusion
+26. annoyance
+27. sadness, caring
+28. sadness, annoyance
+29. disgust, annoyance
+30. annoyance
+31. annoyance, disapproval
+32. anger, annoyance
+33. remorse, nervousness
+34. annoyance
+35. anger, annoyance
+36. confusion, nervousness
+37. anger, annoyance
+38. anger, disgust
+39. disapproval, annoyance
+40. sadness, annoyance
+41. disappointment, sadness
+42. x
+43. annoyance, confusion
+44. sadness, disappointment
+45. nervousness, caring
+46. sadness, anger
+47. annoyance, disapproval
+48. annoyance, sadness
+49. guilt, disappointment
+50. disappointment, annoyance
+51. annoyance, disappointment
+52. anger, nervousness
+53. anger, disapproval
+54. anger, sadness
+55. annoyance, anger
+56. anger, annoyance
+57. anger, annoyance
+58. desire, disappointment
+59. disappointment, annoyance
+60. anger, annoyance
+61. confusion, sadness
+62. caring, annoyance
+63. sadness, annoyance
+64. anger, disgust
+65. anger, sadness
+66. anger, disgust
+67. annoyance, anger
+68. nervousness, annoyance
+69. anger, disgust
+70. nervousness, sadness
+71. nervousness, annoyance
+72. fear, love
+73. excitement, annoyance
+74. annoyance, anger
+75. disappointment, annoyance
+76. confusion, curiosity
+77. caring, disappointment
+78. nervousness, confusion
+79. anger, disappointment
+80. disapproval, desire
+81. annoyance, anger
+82. annoyance, caring
+83. disapproval, anger
+84. annoyance, disgust
+85. caring, amusement
+86. nervousness, fear
+87. approval, caring
+88. neutral
+89. annoyance, confusion
+90. nervousness, sadness
+91. nervousness, confusion
+92. embarrassment, disappointment
+93. nervousness, optimism
+94. sadness, disappointment
+95. anger, disappointment
+96. annoyance, anger
+97. caring, nervousness
+98. caring, love
+99. anger, disapproval
+100. anger, resentment

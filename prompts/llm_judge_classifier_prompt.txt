@@ -1,0 +1,4 @@
+You are evaluating an emotion classifier. For each numbered Reddit post, three candidate emotions from the
+GoEmotions taxonomy are listed. Decide which candidates are acceptable descriptions of the emotion the AUTHOR of the post
+expresses. A candidate is acceptable if a reasonable annotator could choose it as the primary or a secondary emotion.
+Reply with one line per post, nothing else: `N. 1,3` (the numbers of the acceptable candidates) or `N. none`.

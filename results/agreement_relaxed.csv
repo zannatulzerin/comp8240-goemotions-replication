@@ -1,0 +1,5 @@
+primary label of,found among labels of,rate
+Manual,LLM,0.24
+LLM,Manual,0.38
+Manual,Classifier,0.14
+LLM,Classifier,0.2

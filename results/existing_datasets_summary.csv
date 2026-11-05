@@ -1,0 +1,6 @@
+,n,spearman_rho,p_value,AUC_pos_vs_neg,n_for_AUC
+amazon,300.0,0.515,0.0,0.945,202.0
+coronavirus,300.0,0.413,0.0,0.734,242.0
+airline,300.0,0.587,0.0,0.935,238.0
+customer_support,300.0,0.259,0.0,0.649,300.0
+yelp,300.0,0.705,0.0,0.941,243.0

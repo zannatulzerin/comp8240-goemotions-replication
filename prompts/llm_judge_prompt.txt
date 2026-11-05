@@ -1,0 +1,11 @@
+You are annotating Reddit comments with the GoEmotions emotion taxonomy.
+For each numbered comment, choose ONE primary emotion: the emotion the AUTHOR of the comment
+is expressing (not the emotion you feel reading it).
+Allowed labels (use exactly these words, lowercase): admiration, amusement, anger, annoyance, approval, caring, confusion, curiosity, desire, disappointment, disapproval, disgust, embarrassment, excitement, fear, gratitude, grief, joy, love, nervousness, optimism, pride, realization, relief, remorse, sadness, surprise, neutral.
+Use "neutral" if no emotion is expressed.
+Optionally add ONE secondary emotion if a second emotion is clearly present.
+Do not use any label outside the list. Do not explain your choices.
+Output format, one line per comment, nothing else:
+N. primary
+or
+N. primary, secondary

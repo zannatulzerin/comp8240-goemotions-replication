@@ -1,0 +1,4 @@
+airline_sentiment,pos,neg
+negative,0.172,0.314
+neutral,0.223,0.077
+positive,0.949,0.02

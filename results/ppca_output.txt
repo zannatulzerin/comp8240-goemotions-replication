@@ -1,0 +1,26 @@
+  if d / d_old < tol:
+  ax.set_xticklabels(["%dk" % (int(int(label) / 1000)) for label in labels])
+Loading data...
+58011 Examples
+211225 Annotations
+27 emotion Categories
+Processing data...
+Ratings shape (36796, 5, 27)
+Calculating leave-out (partial) correlations...
+Which dimensions to keep?
+[ True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True  True  True  True  True  True  True  True  True  True
+  True  True  True]
+[2.11937217e-13 2.20113690e-13 2.11937217e-13 2.11937217e-13
+ 2.11937217e-13 2.11937217e-13 2.11937217e-13 2.11937217e-13
+ 2.11937217e-13 2.11937217e-13 2.20113690e-13 2.11937217e-13
+ 2.11937217e-13 3.20999370e-13 1.38582882e-10 3.28890804e-11
+ 2.65887916e-13 6.29459802e-13 1.52385172e-11 2.32152256e-11
+ 7.86588871e-13 6.12182469e-11 3.73053881e-13 5.22453593e-13
+ 6.29459802e-13 1.47243080e-12 1.87635218e-10]
+0.001851851851851852
+Running PPCA on all the data...
+Plotting percentage of covariance explained...
+{1: 'admiration', 2: 'amusement', 22: 'anger', 18: 'annoyance', 5: 'approval', 12: 'caring', 13: 'confusion', 4: 'curiosity', 19: 'desire', 20: 'disappointment', 9: 'disapproval', 14: 'disgust', 21: 'embarrassment', 16: 'excitement', 11: 'fear', 0: 'gratitude', 26: 'grief', 8: 'joy', 3: 'love', 23: 'nervousness', 7: 'optimism', 24: 'pride', 17: 'realization', 25: 'relief', 15: 'remorse', 6: 'sadness', 10: 'surprise'}
+Plotting frequency and mean left-out rater correlations...
+Skipping t-SNE plot (color_order.txt not shipped).

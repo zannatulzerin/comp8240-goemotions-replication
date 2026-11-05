@@ -1,0 +1,54 @@
+model: GPT-5
+date: 2026-11-05
+row_ids: [37, 39, 40, 41, 43, 45, 46, 47, 49, 50, 51, 52, 54, 57, 58, 59, 60, 62, 63, 65, 66, 70, 71, 74, 76]
+
+1. nervousness
+2. confusion
+3. anger
+4. sadness
+5. annoyance
+6. sadness
+7. annoyance
+8. disapproval
+9. anger
+10. annoyance
+11. sadness
+12. annoyance
+13. sadness
+14. anger
+15. annoyance
+16. annoyance
+17. sadness
+18. anger
+19. joy
+20. sadness
+21. disappointment
+22. nervousness
+23. annoyance
+24. embarrassment
+25. confusion
+26. annoyance
+27. sadness, caring
+28. sadness, annoyance
+29. disgust, annoyance
+30. annoyance
+31. annoyance, disapproval
+32. anger, annoyance
+33. remorse, nervousness
+34. annoyance
+35. anger, annoyance
+36. confusion, nervousness
+37. anger, annoyance
+38. anger, disgust
+39. disapproval, annoyance
+40. sadness, annoyance
+41. disappointment, sadness
+42. x
+43. annoyance, confusion
+44. sadness, disappointment
+45. nervousness, caring
+46. sadness, anger
+47. annoyance, disapproval
+48. annoyance, sadness
+49. guilt, disappointment
+50. disappointment, annoyance
