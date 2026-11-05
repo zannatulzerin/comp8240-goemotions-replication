@@ -59,11 +59,31 @@ The authors' own code is **not copied** here. The notebook clones it (sparse che
 
 * Best classes: gratitude (F1 0.918), amusement (0.826), love (0.810). Worst: relief and grief (0.000 at both thresholds; 11 and 6 test examples).
 * The result is close to the paper but not identical: a different (RoBERTa) model replaces the authors' TensorFlow-1 BERT, which cannot run on current Colab; the checkpoint is third-party; sequence length was capped at 128 tokens.
-* PPCA: **TBD** (compare the number of significant components with the paper).
+* **PPCA (authors' script, patched):** all 27 principal preserved components are significant after Bonferroni correction (α = 0.00185; every adjusted p < 2×10⁻¹⁰). Mean leave-one-rater-out agreement is highest for gratitude (0.644), admiration (0.539) and amusement (0.480) and lowest for grief (0.162), relief (0.165) and nervousness (0.172); see `results/ppca_emotion_agreements.csv` and the report for the comparison with the paper.
 
-**Existing datasets (positive-vs-negative emotion mass against each dataset's own labels):** **TBD** – see `results/existing_datasets_summary.csv`.
+**Existing datasets (n = 300 sampled items each).** The classifier's positive-minus-negative emotion mass is compared with each dataset's own rating or sentiment label (Spearman ρ; AUC for separating positive from negative items):
 
-**New Reddit data (n = 100):** **TBD** – Cohen's κ (manual vs LLM, manual vs classifier, LLM vs classifier), Fleiss' κ and the sentiment-group κ are in `results/agreement_kappa.csv`.
+| Dataset | Spearman ρ | AUC (pos vs neg) |
+|---|---|---|
+| Amazon Fine Food reviews (1–5 stars) | 0.515 | 0.945 |
+| Yelp reviews (1–5 stars) | 0.705 | 0.941 |
+| Twitter US Airline Sentiment | 0.587 | 0.935 |
+| Coronavirus tweets (5-level sentiment) | 0.413 | 0.734 |
+| Customer Support on Twitter (customer vs company) | 0.259 | 0.649 |
+
+Polarity transfers well to reviews and tweets; the weakest proxy (Customer Support) has no gold sentiment labels. Details: `results/existing_datasets_summary.csv`.
+
+**New Reddit data (n = 100 hand-labelled posts), primary-label agreement:**
+
+| Pair | Exact | Cohen's κ (28-way) | 95% CI |
+|---|---|---|---|
+| Manual vs LLM judge | 0.24 | 0.114 | 0.018 – 0.205 |
+| Manual vs classifier | 0.09 | 0.046 | −0.006 – 0.100 |
+| LLM judge vs classifier | 0.15 | 0.080 | 0.021 – 0.144 |
+
+Fleiss' κ over the three raters is 0.044. Agreement is much higher on the coarse positive/negative/ambiguous/neutral grouping (exact 0.80 manual vs LLM), but κ stays low there because almost every post is negative. On the 27 posts also labelled by a second human annotator, human–human κ is 0.554, versus 0.219 and 0.183 for the LLM against each human. The classifier predicts *neutral* for 39 of the 100 posts, none of which were hand-labelled neutral. Files: `results/agreement_*.csv`, `results/contested_items.csv`.
+
+**LLM judging the classifier's output (preliminary, 25 posts):** the judge accepted the classifier's top-1 label for 56% of posts (74% of non-neutral predictions, 0% of the 6 neutral ones) and at least one of its top-3 labels for 100%. The control condition and the remaining posts are **TBD**.
 
 ## Deviations, limitations and honest caveats
 
