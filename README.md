@@ -10,8 +10,6 @@ This repository replicates the evaluation in **Demszky et al. (2020), *GoEmotion
 * Dataset (authors' release): <https://github.com/google-research/google-research/tree/master/goemotions>
 * Dataset (Hugging Face): <https://huggingface.co/datasets/google-research-datasets/go_emotions>
 
-> **Status note:** items marked **TBD** are filled in as the corresponding notebook sections are completed.
-
 ## What was done
 
 | Stage | What | Notebook section |
@@ -25,7 +23,7 @@ This repository replicates the evaluation in **Demszky et al. (2020), *GoEmotion
 ## Repository layout
 
 ```
-notebooks/   comp8240_goemotions_replication_v2.ipynb   main notebook (saved with outputs)
+notebooks/   comp8240_goemotions_replication.ipynb      main notebook (saved with outputs)
 data/        labelled_master.csv                        100 hand-labelled posts + LLM + classifier labels
              judge_raw/                                 verbatim LLM-judge replies (model + date in each file)
 results/     per_emotion_f1_full_test.csv               per-emotion P/R/F1 at thresholds 0.3 and 0.5
@@ -83,7 +81,7 @@ Polarity transfers well to reviews and tweets; the weakest proxy (Customer Suppo
 
 Fleiss' κ over the three raters is 0.044. Agreement is much higher on the coarse positive/negative/ambiguous/neutral grouping (exact 0.80 manual vs LLM), but κ stays low there because almost every post is negative. On the 27 posts also labelled by a second human annotator, human–human κ is 0.554, versus 0.219 and 0.183 for the LLM against each human. The classifier predicts *neutral* for 39 of the 100 posts, none of which were hand-labelled neutral. Files: `results/agreement_*.csv`, `results/contested_items.csv`.
 
-**LLM judging the classifier's output (preliminary, 25 posts):** the judge accepted the classifier's top-1 label for 56% of posts (74% of non-neutral predictions, 0% of the 6 neutral ones) and at least one of its top-3 labels for 100%. The control condition and the remaining posts are **TBD**.
+**LLM judging the classifier's output (preliminary, 25 posts):** the judge accepted the classifier's top-1 label for 56% of posts (74% of non-neutral predictions, 0% of the 6 neutral ones) and at least one of its top-3 labels for 100%. The control condition and the remaining posts are - A control condition and the remaining 75 posts were not run (see the limitations in the report).
 
 ## Deviations, limitations and honest caveats
 
