@@ -2,7 +2,7 @@
 
 Final project for **COMP8240 Applications of Data Science** (Macquarie University), by Zannatul Ferdous.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zannatulerin/comp8240-goemotions-replication/blob/main/notebooks/comp8240_goemotions_replication.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/zannatulzerin/comp8240-goemotions-replication/blob/main/notebooks/comp8240_goemotions_replication.ipynb)
 
 This repository replicates the evaluation in **Demszky et al. (2020), *GoEmotions: A Dataset of Fine-Grained Emotions*** (ACL 2020), applies the resulting emotion classifier to existing and newly constructed datasets, and uses an LLM as a judge to examine how well the 27-emotion taxonomy generalises beyond Reddit comments.
 
